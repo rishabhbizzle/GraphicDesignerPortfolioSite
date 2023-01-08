@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import About from './components/About';
+import Contact from './components/Contact';
+import Graphics from './components/Graphics';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Skills from './components/Skills';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Home />
+      <About />
+      <Skills />
+      <Contact />
+      <div class="text-center text-xs p-6 bg-black mt-16 md:mt-28">
+    <span className='text-gray-400'>Made by R.</span>
+    {/* <a class="text-gray-200 font-semibold" href="https://tailwind-elements.com/">Tailwind Elements</a> */}
+  </div>
     </div>
   );
 }
